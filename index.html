@@ -13,8 +13,12 @@
     <span id="sw_counter">0:00</span>
     <button type="button" id="sw_play" class="btn btn-primary">&#x25B6;</button>
   </div>
-  <div id="script">
-    <button type="button" id="scr_edit" class="btn">EDIT</button>
+  <div id="script" class="container-fluid">
+    <div class="row">
+      <button type="button" id="scr_prev" class="btn btn-secondary col-1">&#x22D6;</button>
+      <div class="col-10" id="scr_view"></div>
+      <button type="button" id="scr_next" class="btn btn-primary col-1">&#x22D7;</button>
+    </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -23,5 +27,11 @@
   <script src="http://cdn.honokak.osaka/honoka/4.3.1/js/bootstrap.bundle.min.js"></script>
   <script src="stopwatch.js"></script>
   <script src="script.js"></script>
-  </body>
+
+  <dialog id="dlg_edit">
+    <textarea id="scr_edit"></textarea>
+    <button type="button" id="edit_ok" class="btn btn-primary">OK</button>
+    <button type="button" id="edit_cancel" class="btn btn-secondary">Cancel</button>
+  </dialog>
+</body>
 </html>

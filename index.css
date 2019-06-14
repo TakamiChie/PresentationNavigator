@@ -1,3 +1,37 @@
+html,body {
+  height: 100%;
+}
+
+div#script {
+  height: 90%;
+}
+
+div#stopwatch {
+  height: 10%;
+}
+
+.row {
+  height: 100%;
+}
+
+div#scr_view {
+  font-size: 2em;
+}
+
 span#sw_counter {
   font-size: 3em;
+}
+
+dialog#dlg_edit {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: calc(100% - 10px);
+  height: calc(95% - 10px);
+}
+
+textarea#scr_edit {
+  display: block;
+  height: calc(100% - 24px);
+  width: 100%;
 }
